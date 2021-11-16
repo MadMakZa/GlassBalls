@@ -7,6 +7,22 @@
     android:layout_height="match_parent"
     android:background="@color/colorTransparent">
 
+<!--    <TextView-->
+<!--        android:id="@+id/tvNameDialogOpenHand"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:shadowColor="@color/red_200"-->
+<!--        android:shadowDx="6"-->
+<!--        android:shadowDy="8"-->
+<!--        android:shadowRadius="8"-->
+<!--        android:text="NameDialog"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dialogBet"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/dialogBet"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/dialogBet" />-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/dialogBet"
         android:layout_width="300dp"
@@ -17,32 +33,8 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.67">
+        app:layout_constraintVertical_bias="0.45">
 
-
-        <Button
-            android:id="@+id/btnAdd"
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:layout_marginEnd="4dp"
-            android:layout_marginBottom="4dp"
-            android:text="add"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <Button
-            android:id="@+id/btnOk"
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginBottom="4dp"
-            android:text="Bet"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
 
         <GridLayout
             android:id="@+id/handContainer"
@@ -61,4 +53,38 @@
         </GridLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:shadowColor="@color/teal_700"
+        android:shadowDx="6"
+        android:shadowDy="8"
+        android:shadowRadius="15"
+        android:text="Add"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/dialogBet"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="@+id/dialogBet"
+        app:layout_constraintTop_toBottomOf="@+id/dialogBet" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:shadowColor="@color/red_200"
+        android:shadowDx="6"
+        android:shadowDy="8"
+        android:shadowRadius="15"
+        android:text="ok"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd"
+        app:layout_constraintTop_toBottomOf="@+id/dialogBet" />
 </androidx.constraintlayout.widget.ConstraintLayout>

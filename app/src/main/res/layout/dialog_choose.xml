@@ -8,10 +8,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/tvNameDialogCloseHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/red_200"
+        android:shadowDx="6"
+        android:shadowDy="8"
+        android:shadowRadius="8"
+        android:text="Make a choice"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dialogChoose"
+        app:layout_constraintEnd_toEndOf="@+id/dialogChoose"
+        app:layout_constraintStart_toStartOf="@+id/dialogChoose" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/dialogChoose"
-        android:layout_width="240dp"
-        android:layout_height="240dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:background="@drawable/kist120155"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,26 +37,39 @@
         app:layout_constraintVertical_bias="0.498">
 
 
-        <Button
-            android:id="@+id/btnEven"
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:text="Even"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/btnUneven"
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:text="Uneven"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnEven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/black"
+        android:shadowColor="@color/teal_700"
+        android:shadowDx="6"
+        android:shadowDy="8"
+        android:shadowRadius="15"
+        android:text="Even"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/dialogChoose"
+        app:layout_constraintTop_toBottomOf="@+id/dialogChoose" />
+
+    <Button
+        android:id="@+id/btnUneven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/black"
+        android:shadowColor="@color/red_200"
+        android:shadowDx="6"
+        android:shadowDy="8"
+        android:shadowRadius="15"
+        android:text="Uneven"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/dialogChoose"
+        app:layout_constraintTop_toBottomOf="@+id/dialogChoose" />
 </androidx.constraintlayout.widget.ConstraintLayout>
