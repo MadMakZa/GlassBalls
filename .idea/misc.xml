@@ -6,7 +6,9 @@
         <entry key="..\:/Programming/AndroidProjects/GlassBalls/app/src/main/res/layout/activity_main.xml" value="0.4041666666666667" />
         <entry key="..\:/Programming/AndroidProjects/GlassBalls/app/src/main/res/layout/dialog_bet.xml" value="0.4041666666666667" />
         <entry key="..\:/Programming/AndroidProjects/GlassBalls/app/src/main/res/layout/dialog_choose.xml" value="0.39794871794871794" />
+        <entry key="..\:/Programming/AndroidProjects/GlassBalls/app/src/main/res/layout/dialog_loose.xml" value="0.31979166666666664" />
         <entry key="..\:/Programming/AndroidProjects/GlassBalls/app/src/main/res/layout/dialog_turn.xml" value="0.4041666666666667" />
+        <entry key="..\:/Programming/AndroidProjects/GlassBalls/app/src/main/res/layout/dialog_win.xml" value="0.29010416666666666" />
       </map>
     </option>
   </component>

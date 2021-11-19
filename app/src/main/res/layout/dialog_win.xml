@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorTransparent"
+    android:id="@+id/dialog_chest_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/teal_700"
+        android:shadowDx="6"
+        android:shadowDy="8"
+        android:shadowRadius="14"
+        android:text="You passed!"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dialogChoose"
+        app:layout_constraintEnd_toEndOf="@+id/dialogChoose"
+        app:layout_constraintStart_toStartOf="@+id/dialogChoose" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dialogChoose"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:background="@drawable/moneypig"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:shadowColor="@color/teal_700"
+        android:shadowDx="6"
+        android:shadowDy="8"
+        android:shadowRadius="8"
+        android:text="close"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/dialogChoose"
+        app:layout_constraintStart_toStartOf="@+id/dialogChoose"
+        app:layout_constraintTop_toBottomOf="@+id/dialogChoose" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
