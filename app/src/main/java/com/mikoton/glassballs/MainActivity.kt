@@ -55,9 +55,6 @@ class MainActivity : AppCompatActivity() {
                 bindingMain.btnStart.text = "Place a Bet"
                 openDialogBet()
             }
-
-
-
         }
     }
 
