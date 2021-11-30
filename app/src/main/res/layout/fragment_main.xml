@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainFragment">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:shadowColor="@color/teal_700"
+        android:shadowDx="6"
+        android:shadowDy="8"
+        android:shadowRadius="15"
+        android:text="   Score   "
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:gravity="center"
+        android:shadowColor="@color/blue_200"
+        android:shadowDx="6"
+        android:shadowDy="8"
+        android:shadowRadius="13"
+        android:text="Player 240"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvScorePlayerTwo"
+        app:layout_constraintStart_toEndOf="@+id/tvScorePlayerTwo"
+        app:layout_constraintTop_toTopOf="@+id/tvScorePlayerTwo" />
+
+    <TextView
+        android:id="@+id/tvPlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:gravity="center"
+        android:shadowColor="@color/teal_700"
+        android:shadowDx="6"
+        android:shadowDy="8"
+        android:shadowRadius="13"
+        android:text="Player 456"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvScorePlayerOne"
+        app:layout_constraintEnd_toStartOf="@+id/tvScorePlayerOne"
+        app:layout_constraintTop_toTopOf="@+id/tvScorePlayerOne" />
+
+    <TextView
+        android:id="@+id/tvScorePlayerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:shadowColor="@color/teal_700"
+        android:shadowDx="6"
+        android:shadowDy="8"
+        android:shadowRadius="13"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tvScorePlayerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/white"
+        android:shadowColor="@color/blue_200"
+        android:shadowDx="6"
+        android:shadowDy="8"
+        android:shadowRadius="13"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:shadowColor="@color/red_200"
+        android:shadowDx="6"
+        android:shadowDy="8"
+        android:shadowRadius="5"
+        android:text="place a bet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

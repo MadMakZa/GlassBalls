@@ -1,4 +1,4 @@
-package com.mikoton.glassballs
+package com.caladania.meniff
 
 import org.junit.Test
 

@@ -5,35 +5,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bkgrnd"
-    tools:context=".MainActivity">
+    android:background="@color/black"
+    tools:context=".LoadGameActivity">
 
     <TextView
-        android:id="@+id/tvLogo"
+        android:id="@+id/tvLoadingLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:shadowColor="@color/red_200"
+        android:layout_marginTop="120dp"
+        android:shadowColor="@color/green_800"
         android:shadowDx="6"
         android:shadowDy="8"
         android:shadowRadius="15"
-        android:text="Glass Marbles Game"
+        android:text="Squid Game"
         android:textColor="@color/black"
         android:textSize="36sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <FrameLayout
-        android:id="@+id/containerFragments"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:background="@drawable/pigwin"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tvLogo"
-        app:layout_constraintStart_toStartOf="@+id/tvLogo"
-        app:layout_constraintTop_toBottomOf="@+id/tvLogo" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
